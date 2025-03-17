@@ -1,0 +1,115 @@
+/*
+ * React Day Picker
+ *
+ * Overrides for multi select (from-to)
+ * https://react-day-picker.js.org/examples/input-from-to/
+ */
+
+.date-range-group__presets {
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  // background-color: $color-primary-light;
+  border-left: .0625rem solid $color-primary-light;
+
+  .btn {
+
+    display: block;
+    margin: 0;
+
+    font-size: .875rem;
+    line-height: 1.5;
+    text-align: left;
+
+    white-space: nowrap;
+
+  }
+
+}
+
+
+
+.date-range-group {
+
+  /* General overrides */
+
+  .DayPickerInput-OverlayWrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .DayPickerInput-Overlay {
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+
+    overflow: hidden;
+
+  }
+
+  .DayPicker-Day {
+
+    min-width: 2.5rem;
+
+  }
+
+  .DayPicker-wrapper {
+
+  }
+
+  .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+
+    // background-color: $color-accent-green;
+    // color: $color-text-strong;
+
+  }
+
+  /* From-To overrides */
+  .InputFromTo .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
+    background-color: tint($color-accent-green, 90%) !important;
+    color: $color-text;
+  }
+  .InputFromTo .DayPicker-Day {
+    border-radius: 0 !important;
+  }
+  .InputFromTo .DayPicker-Day--start {
+    border-top-left-radius: 50% !important;
+    border-bottom-left-radius: 50% !important;
+  }
+  .InputFromTo .DayPicker-Day--end {
+    border-top-right-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+  }
+  .InputFromTo .DayPickerInput-Overlay {
+    // width: 550px;
+  }
+  .InputFromTo-to .DayPickerInput-Overlay {
+    margin-left: -198px;
+  }
+
+
+}
+
+.DayPickerInput-Overlay--demo {
+
+  // display: none!important;
+  // display: none!important;
+
+  // z-index: $z-index-modal!important;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+
+  &.is-opened {
+
+    // display: flex!important;
+
+  }
+
+}

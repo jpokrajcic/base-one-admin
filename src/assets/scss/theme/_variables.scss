@@ -1,0 +1,77 @@
+/*
+ * Brand
+ */
+
+// Primary color
+$color-primary-dark: hsl(355, 78%, 35%); // 10% increments, 2 steps up and down
+$color-primary-light: hsl(213, 52%, 96%); // 10% increments, 2 steps up and down
+
+// Accent colors
+$color-accent-green: hsl(144, 57%, 67%); // 10% increments, 2 steps up and down
+$color-accent-yellow: hsl(47, 100%, 69%); // 10% increments, 2 steps up and down
+$color-accent-red: hsl(8, 96%, 67%); // 10% increments, 2 steps up and down
+
+// Neutral colors
+$color-grey: hsl(185, 6%, 63%); // 5% increments, 3 steps up and down
+
+/*
+ * Grey steps
+ */
+
+$color-grey-x-dark: darken($color-grey, 30%);
+$color-grey-dark: darken($color-grey, 20%);
+$color-grey-mid-dark: darken($color-grey, 10%);
+$color-grey-mid-light: lighten($color-grey, 10%);
+$color-grey-light: lighten($color-grey, 20%);
+$color-grey-x-light: lighten($color-grey, 30%);
+
+/*
+ * Text
+ */
+
+$color-text: hsla(246, 100%, 14%, 0.75);
+$color-text-weak: hsla(246, 100%, 14%, 0.6);
+$color-text-strong: hsla(246, 100%, 14%, 1);
+$color-text-invert: hsla(0, 0, 100%, 0.75);
+$color-text-weak-invert: hsla(0, 0, 100%, 0.6);
+$color-text-strong-invert: hsla(0, 0, 100%, 1);
+
+// Reference
+
+// $default:       #172b4d !default;
+// $primary:       #5e72e4 !default;
+// $secondary:     #f7fafc !default;
+// $success:       $green !default;
+// $info:          $teal !default;
+// $warning:       $orange !default;
+// $danger:        $red !default;
+// $light:         $gray-500 !default;
+// $dark:          $gray-900 !default;
+// $darker:        darken($gray-900, 15%) !default;
+
+// Overrides
+
+$default: $color-primary-dark; // Dark blue
+$primary: $color-primary-dark; // Dark blue
+$secondary: $color-accent-green; // Green
+$success: $color-accent-green; // Green
+$info: $color-accent-green;
+$warning: $color-accent-yellow;
+$danger: $color-accent-red;
+$light: $color-grey-light;
+$dark: $color-grey-dark;
+$darker: $color-grey-x-dark;
+
+// Fonts
+
+// $font-family-sans-serif: Open Sans, sans-serif !default;
+// $font-family-base: $font-family-sans-serif !default;
+
+$font-family-sans-serif: system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI',
+  'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen',
+  'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+.bg-lightest {
+  background-color: #f6f9fc;
+}

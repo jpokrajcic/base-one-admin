@@ -1,0 +1,48 @@
+/*
+ * Questions
+ *
+ * Preview of the questions in the admin
+ */
+
+.question {
+}
+.question-title {
+	margin-bottom: 1rem;
+}
+.question-lead-image {
+	margin-bottom: 1rem;
+}
+.question-choices {
+  display: grid;
+  grid-gap: .75rem;
+}
+
+.question-choices--images {
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+}
+.question-choices--list {
+	grid-template-rows: 1fr;
+	grid-gap: .5rem;
+}
+.question-choice {
+  text-align: center;
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  .question-choices--list & {
+  	text-align: left;
+  	padding: .5rem 1rem;
+  	background-color: $color-primary-light;
+  	border-radius: $border-radius-sm;
+  }
+}
+
+.o-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
